@@ -1,0 +1,106 @@
+/* =========================
+   GIFTGIVE LIGHT MODE
+========================= */
+
+section[data-testid="stSidebar"] { display:none !important; }
+
+.stApp {
+    background: #FFEFF6;
+    color: #111111;
+}
+
+.block-container {
+    padding-top: 1rem !important;
+    max-width: 1500px;
+}
+
+header[data-testid="stHeader"] {
+    display: none;
+}
+
+.card {
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    border: 1px solid #F1D5DE;
+}
+
+h1, h2, h3, h4 {
+    color: #111827 !important;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, #E91E63, #F48FB1);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    height: 38px;
+    width: auto;
+    font-size: 14px;
+    padding: 6px 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Lift and slightly enlarge on hover, subtle press on active */
+.stButton > button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(244,143,177,0.25);
+}
+
+.stButton > button:active {
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Navigation underline for active nav item */
+.nav-underline {
+    /* remove the bright underline in light mode - keep nav cleaner */
+    display: none !important;
+}
+
+/* Slightly larger glow when active to emphasize */
+.nav-underline:active, .nav-underline:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 28px rgba(17,17,17,0.16), 0 0 36px rgba(17,17,17,0.06) inset;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+}
+
+/* METRIC */
+div[data-testid="metric-container"] {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #F3D9E2;
+    padding: 12px;
+}
+
+/* DATAFRAME */
+div[data-testid="stDataFrame"] {
+    background: white;
+    border-radius: 14px;
+    border: 1px solid #F3D9E2;
+}
+
+/* Theme toggle icon styling (light mode) */
+#theme-toggle, .theme-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #FFFFFF;
+    color: #111827;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid #F1D5DE;
+    box-shadow: 0 4px 10px rgba(241,213,222,0.6);
+}
+
+#theme-toggle:hover, .theme-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(241,213,222,0.7);
+}

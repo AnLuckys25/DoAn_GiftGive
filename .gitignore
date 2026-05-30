@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Streamlit
+.streamlit/
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Database (nếu bạn không muốn push DB)
+*.db
+*.sqlite3
+
+# Mac
+.DS_Store

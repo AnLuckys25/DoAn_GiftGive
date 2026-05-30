@@ -1,0 +1,132 @@
+/* =========================
+   GIFTGIVE DARK MODE
+========================= */
+
+/* APP */
+.stApp {
+    background: #3a0a2a;
+    color: #FFFFFF;
+}
+
+/* Hide Streamlit top header/toolbar in dark mode */
+header[data-testid="stHeader"] {
+    display: none !important;
+}
+
+/* Match light mode container spacing */
+.block-container {
+    padding-top: 1rem !important;
+    max-width: 1500px;
+}
+
+/* Reduce top spacing for headings and nav to make layout tighter */
+h1, h2, h3, h4 {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.stButton > button {
+    margin-top: 0.25rem !important;
+}
+
+/* CARD */
+.card {
+    background: #2a0720;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    border: 1px solid #3a0726;
+}
+
+/* TITLE */
+h1, h2, h3, h4 {
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+}
+
+/* TEXT */
+p, label, span, div {
+    color: #E5E7EB;
+}
+
+/* BUTTON */
+.stButton > button {
+    background: linear-gradient(135deg, #E91E63, #F06292);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    height: 38px;
+    width: auto;
+    font-size: 14px;
+    padding: 6px 12px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Lift and slightly enlarge on hover, subtle press on active */
+.stButton > button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(58,7,38,0.35);
+}
+
+.stButton > button:active {
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Navigation underline for active nav item */
+.nav-underline {
+    /* remove the bright underline in dark mode - keep nav cleaner */
+    display: none !important;
+}
+
+/* Slightly larger glow when active to emphasize */
+.nav-underline:active, .nav-underline:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 28px rgba(255,255,255,0.22), 0 0 36px rgba(255,255,255,0.08) inset;
+}
+
+/* METRIC */
+div[data-testid="metric-container"] {
+    background: #1A1D29;
+    border-radius: 16px;
+    border: 1px solid #2A3144;
+    padding: 12px;
+}
+
+/* DATAFRAME */
+div[data-testid="stDataFrame"] {
+    background: #1A1D29;
+    border-radius: 14px;
+    border: 1px solid #232838;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E91E63;
+    border-radius: 10px;
+}
+
+/* Theme toggle icon styling (dark mode) */
+#theme-toggle, .theme-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #111111;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+#theme-toggle:hover, .theme-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.7);
+}
