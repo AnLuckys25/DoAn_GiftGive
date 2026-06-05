@@ -123,7 +123,7 @@ with left_col:
 
     sidebar_html += "</div>"
     sidebar_html += (
-        "<a class='theme-pill' href='?page=" + page + "&theme=" + theme_target + "'target='self'>"
+        "<a class='theme-pill' href='?page=" + page + "&theme=" + theme_target + "'target='_self'>"
         "<span class='material-icons theme-icon'>" + theme_icon + "</span>"
         "<span>" + theme_label + "</span>"
         "</a>"
