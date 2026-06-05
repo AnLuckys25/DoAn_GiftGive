@@ -2,9 +2,10 @@ import streamlit as st
 
 
 # =========================
-# REPORTS
+# REPORTS / BÁO CÁO
 # =========================
 
+# Function displays the reports and analytics page / Hàm hiển thị trang báo cáo và thống kê
 def show_reports():
 
     st.title("📈 Báo cáo thống kê")

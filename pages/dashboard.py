@@ -5,9 +5,10 @@ from sample_data import summary_data
 
 
 # =====================================
-# DASHBOARD
+# DASHBOARD / BẢNG ĐIỀU KHIỂN
 # =====================================
 
+# Function displays the main dashboard page / Hàm hiển thị trang tổng quan chính
 def show_dashboard():
 
     st.title("📊 Dashboard Tổng quan")
@@ -17,7 +18,7 @@ def show_dashboard():
     st.write("")
 
     # =====================================
-    # METRIC
+    # METRIC / CHỈ SỐ
     # =====================================
 
     col1, col2, col3, col4 = st.columns(4)
@@ -45,7 +46,7 @@ def show_dashboard():
     st.write("")
 
     # =====================================
-    # CHART
+    # CHART / BIỂU ĐỒ
     # =====================================
 
     left, right = st.columns([1.2, 1])
@@ -121,7 +122,7 @@ def show_dashboard():
     st.write("")
 
     # =====================================
-    # RECENT ACTIVITY
+    # RECENT ACTIVITY / HOẠT ĐỘNG GẦN ĐÂY
     # =====================================
 
     st.subheader("📌 Hoạt động gần đây")

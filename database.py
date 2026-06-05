@@ -2,9 +2,10 @@ import pandas as pd
 
 
 # =====================================
-# INVENTORY
+# INVENTORY / KHO HÀNG
 # =====================================
 
+# Function returns sample inventory data / Hàm trả về dữ liệu kho hàng mẫu
 def get_inventory_data():
 
     return pd.DataFrame({
@@ -33,9 +34,10 @@ def get_inventory_data():
 
 
 # =====================================
-# RECIPIENTS
+# RECIPIENTS / NGƯỜI NHẬN
 # =====================================
 
+# Function returns sample recipient data / Hàm trả về dữ liệu người nhận mẫu
 def get_recipient_data():
 
     return pd.DataFrame({
@@ -67,9 +69,10 @@ def get_recipient_data():
 
 
 # =====================================
-# HISTORY
+# HISTORY / LỊCH SỬ
 # =====================================
 
+# Function returns sample donation history data / Hàm trả về dữ liệu lịch sử quyên góp mẫu
 def get_history_data():
 
     return pd.DataFrame({

@@ -3,9 +3,10 @@ from database import get_recipient_data
 
 
 # =====================================
-# RECIPIENT PAGE
+# RECIPIENT PAGE / TRANG NGƯỜI NHẬN
 # =====================================
 
+# Function displays the recipient list page / Hàm hiển thị trang danh sách người nhận
 def show_recipients():
 
     st.title("🤝 Người nhận hỗ trợ")
@@ -14,10 +15,10 @@ def show_recipients():
 
     st.write("")
 
-    # LOAD DATA
+    # LOAD DATA / TẢI DỮ LIỆU
     df = get_recipient_data()
 
-    # TABLE
+    # TABLE / BẢNG DỮ LIỆU
     st.dataframe(
         df,
         use_container_width=True
@@ -25,7 +26,7 @@ def show_recipients():
 
     st.write("")
 
-    # FORM
+    # FORM / MẪU THÊM NGƯỜI NHẬN
     with st.expander("➕ Thêm người nhận"):
 
         name = st.text_input("Tên người nhận")

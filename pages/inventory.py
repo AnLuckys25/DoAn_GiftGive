@@ -3,11 +3,12 @@ import streamlit as st
 
 
 # =====================================
-# INVENTORY PAGE
+# INVENTORY PAGE / TRANG KHO HÀNG
 # =====================================
 
+# Function displays the inventory management page / Hàm hiển thị trang quản lý kho hàng
 def show_inventory():
-    # Mang dòng import bỏ vào ĐÂY, thay vì để ở đầu file
+    # Import data locally to avoid circular imports during app initialization / Import dữ liệu tại chỗ để tránh vòng lặp import khi khởi tạo ứng dụng
     from database import get_inventory_data 
     
     data = get_inventory_data()
@@ -19,7 +20,7 @@ def show_inventory():
     st.write("")
 
 
-    # TABLE
+    # TABLE / BẢNG DỮ LIỆU
     st.dataframe(
         data,
         use_container_width=True
@@ -27,7 +28,7 @@ def show_inventory():
 
     st.write("")
 
-    # FORM
+    # FORM / MẪU THÊM MỚI
     with st.expander("➕ Thêm vật phẩm mới"):
 
         item_name = st.text_input("Tên vật phẩm")
